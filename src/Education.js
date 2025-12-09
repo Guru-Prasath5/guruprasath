@@ -21,7 +21,7 @@ export default class Education extends React.Component{
             </div>
 
             <div className="card2 bordercard2" >
-            <img className="shadePhoto2" src="image/card2.jpg"></img>
+            <img className="shadePhoto2" src="image/card2.jpg" alt="Shri K.K.Naidu higher secondary school"></img>
             <p className="secondarySchool2">
             <span className="plustwo">+2</span><br/>
             Shri K.K.Naidu higher secondary school <br/>
@@ -30,7 +30,7 @@ export default class Education extends React.Component{
             </div>
 
             <div className="card1 bordercard3" >
-            <img className="shadePhoto" src="image/card3.jpg"></img>
+            <img className="shadePhoto" src="image/card3.jpg" alt="Dr.N.G.P Arts and Science College"></img>
             <p className="secondarySchool">
             {/* <div className="hrtag"></div> */}
             <span className="ug">UG</span><br/>
@@ -42,7 +42,7 @@ export default class Education extends React.Component{
             </div>
 
             <div className="card2 bordercard4" >
-            <img className="shadePhoto2" src="image/card4.jpg"></img>
+            <img className="shadePhoto2" src="image/card4.jpg" alt="Birla Institute of Technology and Science, Pilani"></img>
             <p className="secondarySchool2">
             <span className="pg">PG</span><br/>
             M.Tech<br/>

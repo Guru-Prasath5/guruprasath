@@ -8,8 +8,9 @@ export default class Home extends React.Component
             <div className="home">
                 <img src="image/Home.jpg" alt="Home img" className="home"/>
                 <div className="">
-                <a href="#">
-                    <img src='image/GC.png' alt="profileIcon" className="Icon"/></a>
+                <button type="button" className="iconBtn">
+                    <img src='image/GC.png' alt="profileIcon" className="Icon"/>
+                </button>
                 </div>
                 <div className="homeText">
                     <h1>

@@ -40,8 +40,9 @@ export default class ContactMe extends React.Component{
                 nameErr : true,
             })
         }
-        let reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(this.state.emailId === '' || reg.test(this.state.emailId)===false){
+        // Use a simple, reliable email validation to avoid unnecessary escape chars
+        let reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(this.state.emailId === '' || reg.test(this.state.emailId) === false){
             console.log("emai;-"+this.state.emailId)
             this.setState({
                 emailIdErr:true,
@@ -83,8 +84,7 @@ export default class ContactMe extends React.Component{
             <h1 className="lables">Message <span style={{ display:this.state.msgErr?"inline": "none"}}>&#33;Atleast 20 characters</span></h1>
             <textarea className="ContactTextField Area" type="text" value={this.state.msg} id="msg" onChange={this.HandleTextChanges}></textarea>
             </div>
-            <a href="#" className="btn btn-white btn-animated" onClick={this.HandleSubmit}>Submit</a>
-            
+            <button type="button" className="btn btn-white btn-animated" onClick={this.HandleSubmit}>Submit</button>
             </form>
 
             </div>

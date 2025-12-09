@@ -57,8 +57,7 @@ height: 40px;
 border-radius: 0px;
 }
 
-  .btn:link,
-  .btn:visited{
+    .btn{
       margin: 25px;
       font-weight: 500;
       font-size: 2vw;
